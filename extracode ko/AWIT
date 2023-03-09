@@ -1,0 +1,42 @@
+  $info =  "SELECT * FROM tbl_account WHERE role='$role', username='$username',  password='$password'";
+    if ($_POST['username'] == $info['username'] AND $_POST['password'] == $info['password'])
+        { 
+            $_SESSION["USERNAME"] = $username;
+            echo "<script type='text/javascript'>alert('Welcome {$_SESSION['USERNAME']}'); location.replace('HOME_PAGE_IT_HEAD.php');</script>";     
+        }
+
+    else if ($_POST['username'] == $info['username'] AND $_POST['password'] == $info['password'])
+        { 
+            $_SESSION["USERNAME"] = $username;
+            echo "<script type='text/javascript'>alert('Welcome {$_SESSION['USERNAME']}'); location.replace('HOME_PAGE_INFORMATION_OFFICER.php');</script>";     
+        }
+    else
+        {
+            echo "<script>alert('Your role, username or password are incorrect!');</script>";
+        }
+}    
+
+
+
+$info =  "SELECT * FROM tbl_account WHERE username='".$username."' AND password='".$password."' AND role='".$role."'";
+    $result = mysqli_query($con, $info);
+    if($result){
+      while($row=mysqli_fetch_assoc($result)){
+        echo '<script type="text/javascript">alert("You are Login successfully and you are logined as '.$row['role'].'")</script>';
+      }
+      if($role == "IT Head" && $_POST["username"] == $row["username"] && $_POST["password"] == $row["password"]){
+        ?>
+        <script type="text/javascript">window.location.href="HOME_PAGE_IT_HEAD.php"</script>
+        <?php
+      }else if ($role == "Information Officer" && $_POST["username"] == $row["username"] && $_POST["password"] == $row["password"]){
+        ?>
+        <script type="text/javascript">window.location.href="HOME_PAGE_INFORMATION_OFFICER.php"</script>
+        <?php
+      }
+    }else {
+      echo "<script>alert('Your role, username or password are incorrect!');</script>";
+    }
+     } 
+
+     AND $row['username'] == $_GET['username'] AND $rows['password'] == $_GET['password']
+     AND $row['username'] == $_GET['username'] AND $rows['password'] == $_GET['password']

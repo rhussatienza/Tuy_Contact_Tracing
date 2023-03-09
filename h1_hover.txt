@@ -1,0 +1,18 @@
+    <div class="col=7">
+    <h1>Municipality of Tuy Batangas</h1>
+
+
+
+h1{
+
+  color: #111;
+  font-size: 40px;
+  font-weight: 500;
+  text-align:center;
+  transition: color 0.3s ease;
+}
+h1:hover{
+  color: forestgreen;
+  cursor: pointer;
+  transform: scale(1.05);
+}

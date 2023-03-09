@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+section{
+    padding: 100px 0;
+}
+section{
+	padding-bottom: 100px;
+}
+.max-width{
+	max-width: 2000px;
+	padding: 0 80px;
+	margin: auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 30px 0;
+	font-family: 'Poppins', sans-serif;
+	transition: all 0.3s ease;
+	background: linear-gradient(135deg, forestgreen, darkseagreen);
+}
+
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color:blue;
+}
+
+.navbar .logo img{
+	width: 130px;
+	height: 130px;
+
+}
+
+
+.navbar .text{
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .text  h1{
+	display: block;
+	color: #fff;
+	font-size: 35px;
+	font-weight: 500;
+	margin-left: 60px;
+	transition: color 0.3s ease;
+}
+
+.navbar .text h1:hover{
+	color: yellow;
+	cursor: pointer;
+}
+body{
+  background: url(Images/tuy_home2.jpg);
+  background-size: cover !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home .container{
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 35px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 1;
+  bottom: 0;
+  height: 3px;
+  width: 70px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, forestgreen, darkseagreen);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 3 - 20px);
+}
+
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.user-details .input-box input{
+  height: 45px;
+  display: block;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+input[type=file]::file-selector-button {
+  margin-top: 3.5px;
+  border: 2px solid #ccc;
+  color: whitesmoke;
+  padding: .2em .4em;
+  border-radius: .2em;
+  background-color: forestgreen;
+  transition: .5s;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: darkseagreen;
+  border: 2px solid grey;
+  color: darkgreen;
+}
+.user-details .input-box select{
+	height: 45px;
+  display: block;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.user-details .input-box select:focus,
+.user-details .input-box select:valid{
+  border-color: forestgreen;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: forestgreen;
+}
+ form .button{
+  width: 30%;
+   height: 45px;
+   margin: 50px 0;
+   text-align: left;
+ 
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 3px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, forestgreen, darkseagreen);
+ }
+ form .button input:hover{
+  background: linear-gradient(-135deg,forestgreen, darkseagreen);
+  }
+
+form .button #imagebutton{
+  width: 100%;
+   height: 45px;
+ 
+ }
+
+ form .button input [value="IMAGE LIST"]{
+
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 3px;
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, forestgreen, darkseagreen);
+ }
+ form .button #imagebutton input:hover{
+  background: linear-gradient(-135deg,forestgreen, darkseagreen);
+  }
+
+
+form a{
+	display: flex;
+	background: linear-gradient(135deg, forestgreen, darkseagreen);
+	color: #fff;
+	font-size: 18px;
+	justify-content:center;
+	padding: 10px 100px;
+	border-radius: 6px;
+	border: 2px solid forestgreen;
+	transition: all 0.3s ease;
+	display: flex;
+}
+ form a:hover{
+	color: #fff;
+	background:  linear-gradient(-135deg, forestgreen, darkseagreen);; 
+
+}
+
+
+.block {
+    height: 200px;
+}
+.footer-nav {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.show, .footer-nav:hover {
+    display: block;
+}
+.footer-nav span a{
+    color: darkcyan;
+    text-decoration: none;
+}
+.footer-nav a:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+}
+
+@media(max-width: 1050px){
+.navbar .text  h1{
+	display: none;
+}
+}
+ @media(max-width: 584px){
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color:blue;
+}
+
+.navbar .logo img{
+display: flex;
+width: 100px;
+height: 100px;
+
+}
+
+.navbar .text  h1{
+	display: none;
+}
+
+ .home .home-content .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+ form .user-details a{
+ 	margin-bottom: 15px;
+    width: 100%;
+    font-size: 10px;
+ }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+
+  @media(max-width: 459px){
+  	.max-width{
+  		padding:0 20px; 
+  	}
+
+  .home .home-content .container .content .category{
+    flex-direction: column;
+  }
+
+
+  @media(max-width:414px){
+  	.max-width {
+  		padding:0 20px;
+  	}
+  }
+
+  @media(max-width:360px){
+  	.max-width {
+  		padding:0px;
+  	}
+  }
+
+ @media(max-width:820px){
+  	.max-width {
+  		padding:0px;
+  	}
+  }
+  @media(max-width:1050px){
+	.navbar .logo img{
+		display: none;
+	}
+}
+

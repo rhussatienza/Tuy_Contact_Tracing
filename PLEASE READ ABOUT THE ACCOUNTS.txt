@@ -1,0 +1,15 @@
+NOTE: The accounts are already in the database named thesis.sql. Please import these to access the database. Thank you.
+Accounts for the IT Head and Information Officer
+
+
+IT HEAD:
+username: ITHEAD
+password: ithead
+
+
+INFORMATION OFFICER:
+username: Officer1
+password: officer1
+
+username: Officer2
+password: officer2
